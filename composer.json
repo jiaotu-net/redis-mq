@@ -1,0 +1,33 @@
+{
+    "name": "jiaotu-net/redis-mq",
+    "description": "simple redis message quere",
+    "keywords": [
+        "jiaotu",
+        "reids",
+        "mq",
+        "quere"
+    ],
+    "homepage": "http://www.jiaotu.net/",
+    "type": "library",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "HaoHui Wang",
+            "email": "haohui.wang@jiaotu.net",
+            "homepage": "http://www.jiaotu.net/",
+            "role": "Founder"
+        }
+    ],
+    "require": {
+        "php-64bit": ">=7.0.0"
+    },
+    "require-dev": {
+        "jiaotu-net/redis-provider": "dev-master"
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "JiaoTu\\RedisMQ\\": "src/"
+        }
+    }
+}
