@@ -196,7 +196,7 @@ class ReliablyConsumer extends Consumer {
     /**
      * 保留消息
      * 将当前消息移出消息循环, 不再被消费者处理, 待使用ReliablyProducer 的 recover 方法回到队列循环中.
-     * @param boolean|int $plusCount [optional]是否增加重试次数; true是; false否; 若为数字则覆盖消息进入的时间戳且在当前重试计数上增加$plusCount(可传负数做减, 最终重试计数会在0~255); 默认false.
+     * @param boolean|int $plusCount [optional]是否增加重试次数; true是; false否; 若为数字则覆盖消息进入的时间戳且在当前重试计数上增加$plusCount(可传负数做减, 最终重试计数不会超过0~255范围); 默认false.
      * @throws \JiaoTu\RedisMQ\RedisMQException
      * @return boolean 成功返回true; 失败返回false.
      */
